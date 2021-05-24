@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module modelo</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>modelo</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/pedro/Documentos/programacion/python/python_intermedio_UTN/proyecto%20final/codigo/modelo.py">/home/pedro/Documentos/programacion/python/python_intermedio_UTN/proyecto final/codigo/modelo.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="re.html">re</a><br>
+</td><td width="25%" valign=top><a href="sqlite3.html">sqlite3</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="modelo.html#Abmc">Abmc</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Abmc">class <strong>Abmc</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Esta&nbsp;clase&nbsp;esta&nbsp;destinada&nbsp;a&nbsp;operar&nbsp;con&nbsp;la&nbsp;base&nbsp;de&nbsp;datos,&nbsp;genera&nbsp;un&nbsp;objeto&nbsp;del&nbsp;tipo&nbsp;<a href="#Abmc">Abmc</a><br>
+cuya&nbsp;caracteristica&nbsp;es&nbsp;la&nbsp;creación&nbsp;e&nbsp;interacción&nbsp;con&nbsp;una&nbsp;base&nbsp;de&nbsp;datos&nbsp;llamada&nbsp;socioscab<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Abmc-__init__"><strong>__init__</strong></a>(self)</dt><dd><tt>En&nbsp;el&nbsp;momento&nbsp;en&nbsp;que&nbsp;se&nbsp;instancia&nbsp;la&nbsp;clase&nbsp;<a href="#Abmc">Abmc</a>&nbsp;el&nbsp;método&nbsp;__init__&nbsp;crea&nbsp;&nbsp;y&nbsp;configura<br>
+la&nbsp;base&nbsp;de&nbsp;datos&nbsp;si&nbsp;esta&nbsp;no&nbsp;ha&nbsp;sido&nbsp;creada&nbsp;aun,&nbsp;y&nbsp;en&nbsp;caso&nbsp;de&nbsp;presentarse&nbsp;un&nbsp;Error<br>
+lo&nbsp;atrapa&nbsp;e&nbsp;imprime&nbsp;Error.</tt></dd></dl>
+
+<dl><dt><a name="Abmc-actualizar_treeview"><strong>actualizar_treeview</strong></a>(self, mytreeview)</dt><dd><tt>Este&nbsp;método&nbsp;actualiza&nbsp;el&nbsp;trevieew&nbsp;para&nbsp;que&nbsp;cuando&nbsp;se&nbsp;realicen&nbsp;las&nbsp;consultas&nbsp;<br>
+se&nbsp;muestre&nbsp;solo&nbsp;el&nbsp;socio&nbsp;consultado.</tt></dd></dl>
+
+<dl><dt><a name="Abmc-alta"><strong>alta</strong></a>(self, nombre, dni, tipo, ubicacion, deuda)</dt><dd><tt>Este&nbsp;método&nbsp;recibe&nbsp;parámetros&nbsp;y&nbsp;los&nbsp;agrega&nbsp;a&nbsp;la&nbsp;base&nbsp;de&nbsp;datos.</tt></dd></dl>
+
+<dl><dt><a name="Abmc-baja"><strong>baja</strong></a>(self, dnielim)</dt><dd><tt>Este&nbsp;método&nbsp;recibe&nbsp;como&nbsp;parámetro&nbsp;un&nbsp;numero&nbsp;de&nbsp;dni&nbsp;para&nbsp;utilizarlo&nbsp;como&nbsp;indicador<br>
+y&nbsp;eliminarlo&nbsp;de&nbsp;la&nbsp;base&nbsp;de&nbsp;datos.</tt></dd></dl>
+
+<dl><dt><a name="Abmc-cerrar_conexion"><strong>cerrar_conexion</strong></a>(self)</dt><dd><tt>Este&nbsp;método&nbsp;cierra&nbsp;la&nbsp;conexión&nbsp;a&nbsp;la&nbsp;base&nbsp;de&nbsp;datos</tt></dd></dl>
+
+<dl><dt><a name="Abmc-conexion"><strong>conexion</strong></a>(self)</dt><dd><tt>Este&nbsp;método&nbsp;realiza&nbsp;solamente&nbsp;la&nbsp;conección&nbsp;con&nbsp;la&nbsp;base&nbsp;de&nbsp;datos.</tt></dd></dl>
+
+<dl><dt><a name="Abmc-consulta"><strong>consulta</strong></a>(self, dni, mytreview)</dt><dd><tt>Este&nbsp;método&nbsp;recibe&nbsp;como&nbsp;parámetro&nbsp;un&nbsp;numero&nbsp;de&nbsp;dni&nbsp;para&nbsp;utilizarlo&nbsp;como&nbsp;indicador<br>
+y&nbsp;devuelve&nbsp;la&nbsp;información&nbsp;correspondiente&nbsp;a&nbsp;dicho&nbsp;elemento.</tt></dd></dl>
+
+<dl><dt><a name="Abmc-encontrar_socio"><strong>encontrar_socio</strong></a>(self, dnibuscado)</dt><dd><tt>Este&nbsp;método&nbsp;recibe&nbsp;como&nbsp;parametro&nbsp;un&nbsp;dni&nbsp;y&nbsp;verifica&nbsp;que&nbsp;se&nbsp;encuentre&nbsp;en&nbsp;la&nbsp;base&nbsp;de&nbsp;datos<br>
+para&nbsp;luego&nbsp;poder&nbsp;ser&nbsp;utilizado&nbsp;por&nbsp;los&nbsp;otros&nbsp;métodos</tt></dd></dl>
+
+<dl><dt><a name="Abmc-modificar"><strong>modificar</strong></a>(self, dni_actual, nueva_ubicacion, nuevo_tipo, nueva_deuda)</dt><dd><tt>Este&nbsp;método&nbsp;modifica&nbsp;un&nbsp;elemento&nbsp;de&nbsp;la&nbsp;base&nbsp;de&nbsp;datos<br>
+recibe&nbsp;como&nbsp;parámetro&nbsp;un&nbsp;numero&nbsp;de&nbsp;dni&nbsp;para&nbsp;utilizarlo&nbsp;como&nbsp;indicador<br>
+y&nbsp;la&nbsp;nueva&nbsp;información&nbsp;para&nbsp;dicho&nbsp;elemento.</tt></dd></dl>
+
+<dl><dt><a name="Abmc-validar"><strong>validar</strong></a>(self, dato, master=None)</dt><dd><tt>Este&nbsp;método&nbsp;recibe&nbsp;como&nbsp;parámetro&nbsp;un&nbsp;elemento&nbsp;y&nbsp;valida&nbsp;que&nbsp;cumpla&nbsp;las&nbsp;características<br>
+necesarias&nbsp;para&nbsp;cada&nbsp;dato&nbsp;utilizando&nbsp;expresiones&nbsp;regulares.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>
